@@ -24,6 +24,11 @@ Data will be in a json file. A person can be in the data array only once. Names 
             {"type":"mobile","number":"0409812345"},
             {"type":"work", "number":"2468159"}
         ]
+    },
+    {
+        "firstname":"Matt",
+        "lastname":"River",
+        "phones":[]
     }
 ]
 ```
@@ -59,7 +64,7 @@ and Matt River and mobile returns
 ```
 
 If  no person with given name is found, an empty array [] is returned.
-If no number with given typ is found, an empty array [] is returned.
+If no number with given type is found, an empty array [] is returned.
 If at least one parameter is missing, an exception `'missing parameter'` is thrown.
 
 ### **getAllNumbersByType(type)**
@@ -86,3 +91,29 @@ For example `type` work:
      "number":{"type":"work", "tel":"2468159"}}
 ]
 ```
+
+### **getAllNumbers()**
+
+Returns all phone numbers in an array, each as an object of form:
+```json
+{"firstname": "", "lastname": "", "phones":[]}
+```
+The phone object in phones array is of form:
+```json
+{"type":"", "number":""}
+```
+
+If the person doesn't have a phone (the phones field is an empty array), then the person is not added into the result array.
+
+If all persons are missing, an empty array is returned.
+
+
+### **getName(number)**
+
+This method searches the given phone number from the registry. If the number is found, method returns the owner of that number as an object:
+
+```json
+{"firstname":"", "lastname":""}
+```
+If no phone with the given number is found, the method returns `null`.
+If the parameter is missing, `null` is also returned.
