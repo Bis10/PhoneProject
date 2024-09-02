@@ -38,9 +38,10 @@ For example `type` work:
 
 Test uses the default data
 
-````js
+```js
 const register = new PhoneRegister(defaultData);
 register.getAllNumbersByType('mobile');
+```
 
 returns
 
@@ -99,7 +100,7 @@ returns []
 Using modified data:
  modified test data 
  ```json
- 
+ [
     {
         "firstname":"Leila",
         "lastname":"Hökki",
@@ -123,6 +124,7 @@ Using modified data:
  ```js
 const register = new PhoneRegister(modifiedData);
 register.getAllNumbersByType('');
+```
 
 returns 
 ```json
