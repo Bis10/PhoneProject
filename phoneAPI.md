@@ -1,7 +1,8 @@
 # Phone API
 
 ## data
-Data will be in a json file. A person can be in the data array only once. Names are unique so for example Leila Hökki can't exist twice in the json. Phone number is unique and can be only once in the json file. We also assume that the json file is valid and no fields are missing.
+Data will be in a json file. A person can be in the data array only once. Names are unique so for example Leila Hökki can't exist twice in the json. Phone number is unique and can be only once in the json file. We also assume that the json file is valid and no fields are missing, the number can't be an empty string and type may not be null or undefined. 
+Type may be an empty string.
 
 ### phones.json (default)
 
