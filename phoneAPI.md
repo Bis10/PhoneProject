@@ -3,7 +3,7 @@
 ## data
 Data will be in a json file. A person can be in the data array only once. Names are unique so for example Leila Hökki can't exist twice in the json. Phone number is unique and can be only once in the json file. We also assume that the json file is valid and no fields are missing.
 
-### phones.json
+### phones.json (default)
 
 ```json
 [
