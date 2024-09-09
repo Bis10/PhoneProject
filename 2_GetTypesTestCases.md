@@ -2,7 +2,7 @@
 
 ### **getTypes()**
 
-returns all phone types in an array. The type is added to the result array only once. If the are no phones or no persons, an empty array [] is returned. Type may be an empty string.
+Returns all phone types in an array. The type is added to the result array only once. If there are no phones or no persons, an empty array [] is returned. Type may be an empty string.
 For example:
 
 ```json
