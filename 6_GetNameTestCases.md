@@ -10,6 +10,8 @@ This method searches the given phone number from the registry. If the number is 
 If no phone with the given number is found, the method returns `null`.
 If the parameter is missing, `null` is also returned.
 
+All tests are using the default data.
+
 ### Test 1: leila Hökki home number "12345678"
 returns 
 ```json
