@@ -26,14 +26,15 @@ Test uses the default data
 
 Create register with default data.
 
-````js
+```js
 const register = new PhoneRegister(defaultData);
 register.getPersonsNumbersByType('Leila', 'Hökki', 'work');
+```
 
 expect
 ```json
 ["987654321","05040302"]
-````
+```
 
 to be returned
 
