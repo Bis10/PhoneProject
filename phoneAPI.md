@@ -38,7 +38,8 @@ Type may be an empty string.
 
 ## **constructor(data)**
 
-The data from phones.json (or another test json file) array is passed as a parameter `data`. If the parameter is missing, throws an exception `'phone data missing'`.
+
+
 
 ### **getTypes()**
 
